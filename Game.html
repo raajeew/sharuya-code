@@ -1,0 +1,90 @@
+<canvas id="canvas" width="600px" height="500px"></canvas>
+
+<script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContent("2d");
+     
+    function drawrect( x,y,color ) {
+        var size = 20;
+     var padding = 2;
+    ctx.beginPath();
+    ctx.fillStyle = color;
+    ctx.rect((size+padding)*x,(size+padding)*y,size, size);
+
+    ctx.fill();
+
+}
+
+var tableSize = 10;
+
+class User {
+    x = 0;
+    y = 0;
+    color = "#000";
+    dire = 2;
+    tailList = [];
+
+    update() {
+      var prev
+       
+
+        switch(this.dire) {
+          case 0 : this.x -= 1; break
+          case 1 : this.y -= 1; break
+          case 2 : this.x += 1; break
+          case 3 : this.y += 1; break
+        }
+    }
+    loop( value) {
+       if (value < 0 ) {
+           value = tableSize-1;
+           elseif( value > value - 1) 
+           {
+               value = 0;
+
+
+           
+            }
+            this.x = this.loop( this.x );
+            this.y = this.loop( this.y );
+
+           
+           return value;
+
+       }
+    }
+            classItem() {
+              x = 0;
+              y = 0;
+              color = "#00f"
+
+              randomPosition() 
+              {
+                  this.x = parseInt (Math.random() * tableSize);
+                  this.y = parseInt (Math.random() * tableSize);
+              }
+            }
+            varUser = new User();
+            varitem = new item();
+
+   
+        setInterval(function() {
+          drawRect(user.x, user.y, user.color);
+              
+       }, 200);
+
+
+window.onkeydown = function (e) {
+    if (e.keyCode >= 37 && e.keyCode <= 40) {
+        user. dire = e.keyCode - 37;
+
+
+
+    }
+}
+
+
+
+
+</script>
+    
