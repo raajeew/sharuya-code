@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale1">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* Website's header*/
+.header {
+    padding: 80px;
+    text-align: center;
+    background: red;
+    color: white;
+    
+}
+
+/* Incresing the font size of the h1 element of the website */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Styleing the top navigation bar of the website */
+.navbar {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Styleing the navigation bar links of the website */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link of the website */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover of the website */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* column container of the website */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Slidebar/left column of the website */
+.slide {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column of the website */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+ /* Fake image, just for example for the website */
+ .fakeimg {
+     background-color: #aaa;
+     width: 100%;
+     padding: 20px;
+ }
+  /* Footer */
+  .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+  }
+
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other for the website */
+  @media screen and (max-width: 400px){
+      .navbar a {
+          float: none;
+          width: 100%;
+      }
+  }
+</style>
+</head>
+<body>
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About me</a>
+    <a href="#">Contact me</a>
+    <a href="#">Stories</a>
+</div>
+<div class="header">
+    <h1>Shaurya singh</h1>
+    <p>Shaurya singh</p>
+</div>
+
+
+
+<div class="row">
+    <div class="slide">
+        <h2>About me</h2>
+        <h5>Photo of me:</h5>
+        <div class="fakeimg" style="height:200px;">My photo</div>
+        <p>This is a photo of me...</p>
+        <h3>More pic's of me</h3>
+        <p>Cheak out more pic's of me!</p>
+        <div class="fakeimg" style="height:60px;">My photo</div><br>
+    <div class="fakeimg" style="height:60px;">My photo</div><br>
+    <div class="fakeimg" style="height:60px;">My photo</div>
+    </div>
+    <div class="main">
+        <h2>MY TITLE HEADING</h2>
+        <h5>Title description on august 23 2020 Sunday</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>IMAGE OF THIS SITE</p>
+    </div>
+</div>
+<div class="footer">
+    <h2>Footer</h2>
+</div>
+</body>
+</html>

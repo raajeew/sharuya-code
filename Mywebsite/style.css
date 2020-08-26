@@ -1,0 +1,64 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url(Screenshot\ 2020-08-07\ at\ 3.13.45\ PM.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bar
+{
+    background: rgb(0, 0, 0, 0.5);
+    height: 80px;
+}
+
+logo{
+    margin: 10px 50px;
+    height: 60px;
+}
+
+.menu{
+    float: right;
+    list-style: none;
+    margin: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    border: 1px solid #fff;
+}
+
+.menu li a:hover{
+    background: #fff;
+    transition: .4s;
+    color: #000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
